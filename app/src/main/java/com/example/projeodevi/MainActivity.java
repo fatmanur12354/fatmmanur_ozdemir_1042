@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        kayit = (Button) findViewById(R.id.kayit);
-        kayit.setOnClickListener(
-                new View.OnClickListener() {
+        kayit = findViewById(R.id.kayit);
+        kayit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent i = new Intent(MainActivity.this,register.class);
-                        startActivity(i);
+                       Intent i = new Intent(MainActivity.this, registers.class);
+                       startActivity(i);
+
                     }
                 }
         );

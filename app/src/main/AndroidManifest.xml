@@ -13,6 +13,10 @@
         android:theme="@style/Theme.Projeodevi"
         tools:targetApi="31">
         <activity
+            android:name=".registers"
+            android:exported="false"
+            android:theme="@style/Theme.Projeodevi" />
+        <activity
             android:name=".result"
             android:exported="false"
             android:theme="@style/Theme.Projeodevi" />

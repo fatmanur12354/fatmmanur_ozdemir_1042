@@ -13,19 +13,21 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.projeodevi.databinding.ActivityResultBinding;
+import com.example.projeodevi.databinding.RegistersBinding;
 
-public class result extends AppCompatActivity {
+public class registers extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
-    private ActivityResultBinding binding;
+    private RegistersBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityResultBinding.inflate(getLayoutInflater());
+        binding = RegistersBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+
 
 
 
