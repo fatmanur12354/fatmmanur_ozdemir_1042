@@ -67,7 +67,7 @@
             android:id="@+id/textView11"
             android:layout_width="162dp"
             android:layout_height="48dp"
-            android:text="TextView"
+            android:text="Url"
             app:layout_constraintBottom_toTopOf="@+id/editTextDate"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.445"
@@ -95,10 +95,10 @@
             android:text="Sil"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.837" />
+            app:layout_constraintVertical_bias="0.853" />
 
         <Button
             android:id="@+id/button"
@@ -110,7 +110,7 @@
             app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.837" />
+            app:layout_constraintVertical_bias="0.853" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
