@@ -21,9 +21,10 @@
             android:text="Adı Soyadı"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.381"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.135" />
+            app:layout_constraintVertical_bias="0.133" />
 
         <ImageView
             android:id="@+id/imageViews"
@@ -31,10 +32,10 @@
             android:layout_height="132dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintHorizontal_bias="0.388"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.233"
+            app:layout_constraintVertical_bias="0.232"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -62,14 +63,14 @@
 
         <EditText
             android:id="@+id/editTextText2"
-            android:layout_width="242dp"
+            android:layout_width="216dp"
             android:layout_height="67dp"
             android:layout_marginTop="4dp"
             android:ems="10"
             android:inputType="text"
             android:text="Eserleri"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.591"
+            app:layout_constraintHorizontal_bias="0.512"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
 
@@ -101,11 +102,13 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="108dp"
+            android:layout_marginBottom="52dp"
             android:text="Yeni Bilim adamı ekle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
