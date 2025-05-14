@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private Button bttn;
+    private Button kayit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button bttn = (Button) findViewById(R.id.kayit);
-        bttn.setOnClickListener(
+        kayit = (Button) findViewById(R.id.kayit);
+        kayit.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
