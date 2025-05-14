@@ -33,7 +33,7 @@ public class result extends AppCompatActivity {
         ybadamiekle.setOnClickListener(new View.OnClickListener() {
                                      @Override
                                      public void onClick(View v) {
-                                         Intent i = new Intent(result.this,selected_artist.class);
+                                         Intent i = new Intent(result.this,YbaekleActivity.class);
                                          startActivity(i);
 
                                      }
