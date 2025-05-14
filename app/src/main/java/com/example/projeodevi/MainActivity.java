@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private Button kayit;
+    private Button kayit,giris;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        giris = findViewById(R.id.giris);
+        giris.setOnClickListener(new View.OnClickListener() {
+                                     @Override
+                                     public void onClick(View v) {
+                                         Intent i = new Intent(MainActivity.this, result.class);
+                                         startActivity(i);
 
+                                     }
+                                 }
+        );
         kayit = findViewById(R.id.kayit);
         kayit.setOnClickListener(new View.OnClickListener() {
                     @Override
