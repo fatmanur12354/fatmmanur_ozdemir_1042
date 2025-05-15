@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "938000091777",
+    "project_id": "fatmanurozdemir12-4cbad",
+    "storage_bucket": "fatmanurozdemir12-4cbad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938000091777:android:cf2279143e75e9f3bb1b80",
+        "android_client_info": {
+          "package_name": "com.example.projeodevi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9XYX1A5AuWtCBMKuw16mC5vJM5w85d2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
