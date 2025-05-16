@@ -27,37 +27,38 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText sifre;
     FirebaseAuth mAuth;
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
         mAuth = FirebaseAuth.getInstance();
+
+        mail = findViewById(R.id.mail);
+        sifre = findViewById(R.id.sifre);
 
         giris = findViewById(R.id.giris);
         giris.setOnClickListener(new View.OnClickListener() {
-                                     @Override
-                                     public void onClick(View v) {
-                                       loginUser();
+            @Override
+            public void onClick(View v) {
+                loginUser();
+            }
+        });
 
-                                     }
-                                 }
-        );
         kayit = findViewById(R.id.kayit);
         kayit.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                       Intent i = new Intent(MainActivity.this, registers.class);
-                       startActivity(i);
-
-                    }
-                }
-        );
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, registers.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void loginUser(){
@@ -76,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                        Toast.makeText(MainActivity.this, "Başarı ile giriş yapıldı", Toast.LENGTH_SHORT).show();
-                        Intent i = new Intent(MainActivity.this, result.class);
-                        startActivity(i);
+                      //  Intent i = new Intent(MainActivity.this, result.class);
+                      //  startActivity(i);
                     }else{
                         Toast.makeText(MainActivity.this, "Log in Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
