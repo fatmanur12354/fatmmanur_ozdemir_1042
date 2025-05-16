@@ -12,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <EditText
             android:id="@+id/ulkesis"
-            android:layout_width="164dp"
+            android:layout_width="234dp"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
             android:text="Ülkesi"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.441"
+            app:layout_constraintHorizontal_bias="0.451"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/biladisoyadi2" />
 
@@ -45,10 +45,10 @@
             android:text="Eserleri"
             app:layout_constraintBottom_toTopOf="@+id/button2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ot"
-            app:layout_constraintVertical_bias="0.309" />
+            app:layout_constraintVertical_bias="0.092" />
 
         <EditText
             android:id="@+id/ot"
@@ -63,26 +63,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dt" />
 
-        <TextView
+        <EditText
             android:id="@+id/url"
-            android:layout_width="162dp"
-            android:layout_height="48dp"
+            android:layout_width="238dp"
+            android:layout_height="49dp"
             android:text="Url"
             app:layout_constraintBottom_toTopOf="@+id/dt"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintHorizontal_bias="0.462"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ulkesis"
-            app:layout_constraintVertical_bias="0.277" />
+            app:layout_constraintVertical_bias="0.571" />
 
-        <TextView
+        <EditText
             android:id="@+id/biladisoyadi2"
-            android:layout_width="149dp"
-            android:layout_height="35dp"
+            android:layout_width="222dp"
+            android:layout_height="48dp"
             android:layout_marginTop="52dp"
             android:text="Adı Soyadı"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.416"
+            app:layout_constraintHorizontal_bias="0.444"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

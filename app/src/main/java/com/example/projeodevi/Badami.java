@@ -1,3 +1,5 @@
+package com.example.projeodevi;
+
 public class Badami {
 
     String id;
@@ -23,6 +25,7 @@ public class Badami {
 
     }
 
+
     public String getId() {
         return id;
     }
@@ -45,7 +48,7 @@ public class Badami {
     public String getUrl() {
         return url;
     }
-    public String geEserleri() {
-        return url;
+    public String getEserleri() {
+        return eserileri;
     }
 }

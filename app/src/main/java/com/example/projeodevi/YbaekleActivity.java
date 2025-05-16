@@ -18,14 +18,17 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.projeodevi.databinding.YbaekleBinding;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
 
 public class YbaekleActivity extends AppCompatActivity {
     private Button kaydet;
 
     private AppBarConfiguration appBarConfiguration;
     private YbaekleBinding binding;
-    EditText Dt,Ot,Eserleri;
+    EditText Dt,Ot,Eserleri,ulkesi,adisoyadi,url;
     FirebaseFirestore db = FirebaseFirestore.getInstance();    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,13 +39,16 @@ public class YbaekleActivity extends AppCompatActivity {
         Dt = findViewById(R.id.dt);
         Ot = findViewById(R.id.ot);
         Eserleri = findViewById(R.id.eserleri);
+        adisoyadi = findViewById(R.id.biladisoyadi2);
+        ulkesi=findViewById(R.id.ulkesis);
+        url=findViewById(R.id.url);
 
         kaydet = findViewById(R.id.button);
+
         kaydet.setOnClickListener(new View.OnClickListener() {
                                      @Override
                                      public void onClick(View v) {
-                                         //Intent i = new Intent(YbaekleActivity.this, result.class);
-                                        // startActivity(i);
+
                                          insertData();
                                      }
                                  }
@@ -52,32 +58,35 @@ public class YbaekleActivity extends AppCompatActivity {
 
         );
 
-        //biladisoyadi2
-        //ulkesis
-        //url
-        //dt
-        //ot
-        //eserileri
+
 
 
 
     }
 
     private void insertData() {
+        String adisoyadiget = adisoyadi.getText().toString();
+        String ulkesiget = ulkesi.getText().toString();
+        String urlget = url.getText().toString();
+        String dtget = Dt.getText().toString();
+        String otget = Ot.getText().toString();
+        String Eserleriget = Eserleri.getText().toString();
 
+        String id = db.collection("Bilimadamlari").document().getId();
 
-        //String adisoyadi = biladisoyadi2.getText().toString();
-        //  String ulkesi = ulkesis.getText().toString();
-       // String bilimadami = spinnerCourses.getSelectedItem().toString();
+        Badami badamis = new Badami(id, adisoyadiget, ulkesiget, urlget, dtget, otget, Eserleriget);
 
-        //String id = db.push().getKey();
-
-        //Badami Badamis = new Badami(id,name,rollno,course);
-        // assert id != null;
-        // db.child(id).setValue(students);
-        Toast.makeText(YbaekleActivity.this,"Data eklendi!",Toast.LENGTH_SHORT).show();
-
+        db.collection("kullanicilar")
+                .document(id)
+                .set(badamis)
+                .addOnSuccessListener(aVoid ->
+                        Toast.makeText(YbaekleActivity.this, "Veri eklendi!", Toast.LENGTH_SHORT).show()
+                )
+                .addOnFailureListener(e ->
+                        Toast.makeText(YbaekleActivity.this, "Hata: " + e.getMessage(), Toast.LENGTH_SHORT).show()
+                );
     }
+
 
 
 
