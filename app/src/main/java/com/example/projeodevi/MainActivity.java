@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
         String password = sifre.getText().toString();
 
         if (TextUtils.isEmpty(email)){
-            mail.setError("Email cannot be empty");
+            mail.setError("Email boşgeçilemez");
             mail.requestFocus();
         }else if (TextUtils.isEmpty(password)){
-            sifre.setError("Password cannot be empty");
+            sifre.setError("şifre boşgeçilemez");
             sifre.requestFocus();
         }else{
             mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
