@@ -33,7 +33,7 @@
         android:id="@+id/isimsoyisim"
         android:layout_width="210dp"
         android:layout_height="66dp"
-        android:hint="isimSoyisim"
+        android:hint="isim Soyisim"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"

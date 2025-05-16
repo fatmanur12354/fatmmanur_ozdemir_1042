@@ -93,10 +93,11 @@ public class registers extends AppCompatActivity {
                      public void onComplete(@NonNull Task<AuthResult> task) {
                          if (task.isSuccessful()) {
                              Toast.makeText(registers.this, "Kayıt başarılı", Toast.LENGTH_SHORT).show();
-                            // startActivity(new Intent(registers.this, LoginActivity.class));
-                             //finish();
+                               startActivity(new Intent(registers.this, result.class));
+                               finish();
                          } else {
                               Toast.makeText(registers.this, "Kayıt hatası: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                             startActivity(new Intent(registers.this, MainActivity.class));
                          }
                      }
                  });
