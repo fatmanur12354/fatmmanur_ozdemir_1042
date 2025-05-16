@@ -16,13 +16,13 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.projeodevi.databinding.YbaekleBinding;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class YbaekleActivity extends AppCompatActivity {
     private Button kaydet;
     private AppBarConfiguration appBarConfiguration;
     private YbaekleBinding binding;
-
-    @Override
+    FirebaseFirestore db = FirebaseFirestore.getInstance();    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -33,7 +33,7 @@ public class YbaekleActivity extends AppCompatActivity {
         kaydet.setOnClickListener(new View.OnClickListener() {
                                      @Override
                                      public void onClick(View v) {
-                                         Intent i = new Intent(YbaekleActivity.this, MainActivity.class);
+                                         Intent i = new Intent(YbaekleActivity.this, result.class);
                                          startActivity(i);
 
                                      }
