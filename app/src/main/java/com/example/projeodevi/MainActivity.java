@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        mAuth = FirebaseAuth.getInstance();
+
         giris = findViewById(R.id.giris);
         giris.setOnClickListener(new View.OnClickListener() {
                                      @Override
