@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                        Toast.makeText(MainActivity.this, "Başarı ile giriş yapıldı", Toast.LENGTH_SHORT).show();
-                      //  Intent i = new Intent(MainActivity.this, result.class);
-                      //  startActivity(i);
+                         Intent i = new Intent(MainActivity.this, result.class);
+                        startActivity(i);
                     }else{
                         Toast.makeText(MainActivity.this, "Log in Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
