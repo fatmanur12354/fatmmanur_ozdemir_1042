@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -22,6 +23,7 @@ public class YbaekleActivity extends AppCompatActivity {
     private Button kaydet;
     private AppBarConfiguration appBarConfiguration;
     private YbaekleBinding binding;
+
     FirebaseFirestore db = FirebaseFirestore.getInstance();    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,17 +35,44 @@ public class YbaekleActivity extends AppCompatActivity {
         kaydet.setOnClickListener(new View.OnClickListener() {
                                      @Override
                                      public void onClick(View v) {
-                                         Intent i = new Intent(YbaekleActivity.this, result.class);
-                                         startActivity(i);
-
+                                         //Intent i = new Intent(YbaekleActivity.this, result.class);
+                                        // startActivity(i);
+                                         insertData();
                                      }
                                  }
+
+
+
+
         );
 
+        //biladisoyadi2
+        //ulkesis
+        //url
+        //dt
+        //ot
+        //eserileri
 
 
 
     }
+
+    private void insertData() {
+
+
+        // String adisoyadi = biladisoyadi2.getText().toString();
+        // String ulkesi = ulkesis.getText().toString();
+        //String bilimadami = spinnerCourses.getSelectedItem().toString();
+
+        //String id = db.push().getKey();
+
+        //Badami Badamis = new Badami(id,name,rollno,course);
+        // assert id != null;
+        // db.child(id).setValue(students);
+        Toast.makeText(YbaekleActivity.this,"Data eklendi!",Toast.LENGTH_SHORT).show();
+
+    }
+
 
 
 }

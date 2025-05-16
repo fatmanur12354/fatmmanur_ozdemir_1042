@@ -55,7 +55,7 @@
         android:layout_height="36dp"
         android:layout_marginBottom="59dp"
         android:text="Ülkesi"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintBottom_toBottomOf="@+id/dt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/dt"
         android:layout_width="214dp"
         android:layout_height="55dp"
         android:layout_marginBottom="276dp"
@@ -101,7 +101,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
-        android:id="@+id/editTextDate2"
+        android:id="@+id/ot"
         android:layout_width="215dp"
         android:layout_height="63dp"
         android:layout_marginTop="20dp"
@@ -112,11 +112,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/dt"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/eserleri"
         android:layout_width="242dp"
         android:layout_height="67dp"
         android:layout_marginTop="8dp"
@@ -127,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate2"
+        app:layout_constraintTop_toBottomOf="@+id/ot"
         app:layout_constraintVertical_bias="0.008" />
 
     <com.google.android.material.appbar.AppBarLayout

@@ -24,7 +24,7 @@
             app:layout_constraintTop_toBottomOf="@+id/biladisoyadi2" />
 
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/dt"
             android:layout_width="240dp"
             android:layout_height="77dp"
             android:layout_marginTop="84dp"
@@ -37,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/ulkesis" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/eserleri"
             android:layout_width="242dp"
             android:layout_height="67dp"
             android:ems="10"
@@ -47,11 +47,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate2"
+            app:layout_constraintTop_toBottomOf="@+id/ot"
             app:layout_constraintVertical_bias="0.309" />
 
         <EditText
-            android:id="@+id/editTextDate2"
+            android:id="@+id/ot"
             android:layout_width="236dp"
             android:layout_height="61dp"
             android:layout_marginTop="12dp"
@@ -61,14 +61,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.48"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+            app:layout_constraintTop_toBottomOf="@+id/dt" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/url"
             android:layout_width="162dp"
             android:layout_height="48dp"
             android:text="Url"
-            app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+            app:layout_constraintBottom_toTopOf="@+id/dt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.445"
             app:layout_constraintStart_toStartOf="parent"
