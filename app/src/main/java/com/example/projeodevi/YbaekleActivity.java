@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.navigation.NavController;
@@ -21,15 +22,20 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class YbaekleActivity extends AppCompatActivity {
     private Button kaydet;
+
     private AppBarConfiguration appBarConfiguration;
     private YbaekleBinding binding;
-
+    EditText Dt,Ot,Eserleri;
     FirebaseFirestore db = FirebaseFirestore.getInstance();    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = YbaekleBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Dt = findViewById(R.id.dt);
+        Ot = findViewById(R.id.ot);
+        Eserleri = findViewById(R.id.eserleri);
 
         kaydet = findViewById(R.id.button);
         kaydet.setOnClickListener(new View.OnClickListener() {
@@ -60,9 +66,9 @@ public class YbaekleActivity extends AppCompatActivity {
     private void insertData() {
 
 
-        // String adisoyadi = biladisoyadi2.getText().toString();
-        // String ulkesi = ulkesis.getText().toString();
-        //String bilimadami = spinnerCourses.getSelectedItem().toString();
+        //String adisoyadi = biladisoyadi2.getText().toString();
+        //  String ulkesi = ulkesis.getText().toString();
+       // String bilimadami = spinnerCourses.getSelectedItem().toString();
 
         //String id = db.push().getKey();
 
